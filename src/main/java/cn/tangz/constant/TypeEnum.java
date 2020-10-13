@@ -1,5 +1,7 @@
 package cn.tangz.constant;
 
+import org.apache.commons.lang3.StringUtils;
+
 /**
  * 属性
  *
@@ -108,5 +110,19 @@ public enum TypeEnum {
         this.name = name;
         this.id = id;
         this.engName = engName;
+    }
+
+    public static int getTypeNum(String type) {
+        if (StringUtils.isNotBlank(type)) {
+            for (TypeEnum typeEnum : TypeEnum.values()) {
+                if (type.equals(typeEnum.name)) {
+                    return typeEnum.id;
+                }
+                if (type.equals(typeEnum.engName)) {
+                    return typeEnum.id;
+                }
+            }
+        }
+        return -1;
     }
 }
