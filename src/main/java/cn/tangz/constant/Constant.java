@@ -5,5 +5,4 @@ package cn.tangz.constant;
  */
 public final class Constant {
 
-
 }

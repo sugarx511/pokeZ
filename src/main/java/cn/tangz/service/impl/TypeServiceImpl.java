@@ -19,7 +19,6 @@ public class TypeServiceImpl implements TypeService {
 
     private static final double V = 2;
 
-
     private static final double[][] TYPE_RESTRAINT =
             {
                     {O, O, O, O, O, O, O, E, O, O, X, O, O, O, E, O, O, O},
@@ -64,6 +63,4 @@ public class TypeServiceImpl implements TypeService {
             return TYPE_RESTRAINT[atTypeNum][deTypeNum] * TYPE_RESTRAINT[atTypeNum][deTypeNum2];
         }
     }
-
-
 }

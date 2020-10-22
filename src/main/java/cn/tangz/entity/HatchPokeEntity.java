@@ -6,6 +6,4 @@ package cn.tangz.entity;
  **/
 public class HatchPokeEntity {
 
-
-
 }

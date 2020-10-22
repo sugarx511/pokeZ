@@ -8,5 +8,4 @@ package cn.tangz.constant;
  **/
 public class TypeConstant {
 
-
 }

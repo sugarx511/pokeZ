@@ -46,13 +46,12 @@ public class TestApi {
         HashMap<String, String> resultMap = new HashMap<>(2);
         resultMap.put("testResult", String.valueOf(StringUtils.isNumericSpace(testValue)));
 
-        try{
+        try {
             Double num = Double.valueOf(testValue);
-            resultMap.put("tryResult",String.valueOf(true));
-        }catch (Exception e){
-            resultMap.put("tryResult",String.valueOf(false));
+            resultMap.put("tryResult", String.valueOf(true));
+        } catch (Exception e) {
+            resultMap.put("tryResult", String.valueOf(false));
         }
         return resultMap;
     }
-
 }

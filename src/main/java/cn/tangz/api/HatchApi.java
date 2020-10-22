@@ -34,6 +34,4 @@ public class HatchApi {
         resultMap.put("testResult", "Result:" + testValue);
         return resultMap;
     }
-
-
 }
